@@ -1,0 +1,183 @@
+---
+const phoneDisplay = "07877 739107";
+const phoneLink = "tel:+447877739107";
+
+const whatsappMessage =
+  "Hello Emre, I would like to book a mobile barber appointment.";
+
+const whatsappLink =
+  `https://wa.me/447877739107?text=${encodeURIComponent(whatsappMessage)}`;
+---
+
+<section
+  id="home"
+  class="relative overflow-hidden bg-brand-dark pt-28"
+>
+  <!-- Decorative background -->
+  <div
+    aria-hidden="true"
+    class="absolute -left-32 top-24 h-80 w-80 rounded-full bg-brand-gold/10 blur-3xl"
+  ></div>
+
+  <div
+    aria-hidden="true"
+    class="absolute -right-32 bottom-10 h-80 w-80 rounded-full bg-brand-gold/10 blur-3xl"
+  ></div>
+
+  <div
+    class="relative mx-auto grid min-h-[calc(100vh-5rem)] max-w-7xl items-center gap-12 px-6 py-14 lg:grid-cols-2 lg:gap-16 lg:py-20"
+  >
+    <!-- Content -->
+    <div class="order-2 text-center lg:order-1 lg:text-left">
+      <div
+        class="mb-6 inline-flex items-center gap-2 rounded-full border border-brand-gold/30 bg-brand-gold/10 px-4 py-2"
+      >
+        <span class="h-2 w-2 rounded-full bg-brand-gold"></span>
+
+        <span
+          class="text-xs font-semibold uppercase tracking-[0.2em] text-brand-gold"
+        >
+          Traditional Turkish Barber
+        </span>
+      </div>
+
+      <h1
+        class="font-display text-5xl font-bold leading-[1.05] text-brand-text sm:text-6xl lg:text-7xl"
+      >
+        Professional barber service,
+        <span class="text-brand-gold">wherever you are.</span>
+      </h1>
+
+      <p
+        class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-brand-muted lg:mx-0"
+      >
+        Mobile haircuts, skin fades, beard trims and traditional hot towel
+        services delivered directly to your home, workplace or event.
+      </p>
+
+      <!-- Benefits -->
+      <div
+        class="mt-8 grid gap-3 text-left text-sm text-brand-muted sm:grid-cols-2"
+      >
+        <div class="flex items-center gap-3">
+          <span
+            class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-gold text-sm font-bold text-brand-dark"
+          >
+            ✓
+          </span>
+          Home and workplace visits
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span
+            class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-gold text-sm font-bold text-brand-dark"
+          >
+            ✓
+          </span>
+          Professional equipment
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span
+            class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-gold text-sm font-bold text-brand-dark"
+          >
+            ✓
+          </span>
+          Flexible appointments
+        </div>
+
+        <div class="flex items-center gap-3">
+          <span
+            class="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-brand-gold text-sm font-bold text-brand-dark"
+          >
+            ✓
+          </span>
+          Friendly local service
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div
+        class="mt-10 flex flex-col justify-center gap-4 sm:flex-row lg:justify-start"
+      >
+        <a
+          href={whatsappLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center rounded-full bg-brand-gold px-7 py-3.5 font-semibold text-brand-dark transition hover:-translate-y-0.5 hover:bg-brand-gold-light"
+        >
+          Book on WhatsApp
+        </a>
+
+        <a
+          href="#services"
+          class="inline-flex items-center justify-center rounded-full border border-white/20 px-7 py-3.5 font-semibold text-brand-text transition hover:border-brand-gold hover:text-brand-gold"
+        >
+          View Services & Prices
+        </a>
+      </div>
+
+      <!-- Contact -->
+      <div
+        class="mt-8 flex flex-col items-center gap-2 text-sm text-brand-muted sm:flex-row sm:justify-center sm:gap-5 lg:justify-start"
+      >
+        <span>Call or WhatsApp:</span>
+
+        <a
+          href={phoneLink}
+          class="font-semibold text-brand-text transition hover:text-brand-gold"
+        >
+          {phoneDisplay}
+        </a>
+      </div>
+    </div>
+
+    <!-- Image -->
+    <div class="order-1 lg:order-2">
+      <div class="relative mx-auto max-w-lg">
+        <div
+          aria-hidden="true"
+          class="absolute -inset-4 rotate-3 rounded-[2rem] border border-brand-gold/30"
+        ></div>
+
+        <div
+          class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-brand-surface shadow-2xl shadow-black/50"
+        >
+          <img
+            src="/images/hero-mobile-barber.jpg"
+            alt="Yildiz Mobile Barber providing a professional haircut at a customer's home"
+            width="1080"
+            height="1440"
+            class="aspect-[4/5] h-full w-full object-cover"
+            loading="eager"
+            fetchpriority="high"
+          />
+
+          <div
+            class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black via-black/50 to-transparent px-6 pb-6 pt-20"
+          >
+            <p class="font-semibold text-white">
+              Mobile service at your location
+            </p>
+
+            <p class="mt-1 text-sm text-white/70">
+              Home · Work · Events
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="absolute -bottom-6 -left-4 rounded-2xl border border-white/10 bg-brand-surface/95 px-5 py-4 shadow-xl backdrop-blur sm:-left-10"
+        >
+          <p class="text-xs uppercase tracking-[0.2em] text-brand-gold">
+            Professional Service
+          </p>
+
+          <p class="mt-1 font-semibold text-brand-text">
+            Quality you can trust
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

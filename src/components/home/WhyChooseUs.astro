@@ -1,0 +1,79 @@
+---
+const benefits = [
+  {
+    title: "I Come to You",
+    description:
+      "Professional barber service at your home, workplace or event.",
+    icon: "🚐",
+  },
+  {
+    title: "Traditional Turkish Barber",
+    description:
+      "Classic barbering techniques, hot towel services and careful attention to detail.",
+    icon: "✂️",
+  },
+  {
+    title: "Professional Equipment",
+    description:
+      "Clean, reliable equipment prepared for every appointment.",
+    icon: "🧰",
+  },
+  {
+    title: "Flexible Appointments",
+    description:
+      "Arrange a suitable time directly by phone or WhatsApp.",
+    icon: "📅",
+  },
+  {
+    title: "Friendly Local Service",
+    description:
+      "A personal and professional service from an experienced mobile barber.",
+    icon: "🤝",
+  },
+  {
+    title: "Quality You Can Trust",
+    description:
+      "Careful work, clear prices and a service focused on customer satisfaction.",
+    icon: "⭐",
+  },
+];
+---
+
+<section id="why-us" class="py-24 bg-[#10182A]">
+  <div class="mx-auto max-w-7xl px-6">
+    <div class="mx-auto max-w-3xl text-center">
+      <p class="text-sm font-semibold uppercase tracking-[0.25em] text-brand-gold">
+        Why Choose Us
+      </p>
+
+      <h2 class="mt-4 font-display text-4xl font-bold text-brand-text sm:text-5xl">
+        Barbering made simple, professional and convenient.
+      </h2>
+
+      <p class="mt-6 text-lg leading-8 text-brand-muted">
+        Yildiz Mobile Barber brings a trusted barber service directly to your
+        chosen location.
+      </p>
+    </div>
+
+    <div class="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {
+        benefits.map((benefit) => (
+          <article class="rounded-3xl border border-white/10 bg-brand-dark p-7 transition hover:-translate-y-1 hover:border-brand-gold/40">
+            <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-gold/10 text-2xl">
+              {benefit.icon}
+            </div>
+
+            <h3 class="mt-6 font-display text-2xl font-bold text-brand-text">
+              {benefit.title}
+            </h3>
+
+            <p class="mt-3 leading-7 text-brand-muted">
+              {benefit.description}
+            </p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

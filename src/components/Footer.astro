@@ -1,0 +1,93 @@
+---
+const currentYear = new Date().getFullYear();
+
+const phoneDisplay = "07877 739107";
+const phoneLink = "tel:+447877739107";
+const email = "emreyildiz4849@gmail.com";
+
+const instagramLink = "https://www.instagram.com/yildiz_mobile_barber/";
+const facebookLink = "https://www.facebook.com/profile.php?id=100068523071255";
+---
+
+<footer class="border-t border-white/10 bg-brand-dark">
+  <div class="mx-auto max-w-7xl px-6 py-12">
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+      <!-- Brand -->
+      <div class="lg:col-span-2">
+        <a
+          href="#home"
+          class="font-display text-3xl font-bold tracking-tight text-brand-text"
+        >
+          Yildiz <span class="text-brand-gold">Mobile Barber</span>
+        </a>
+
+        <p class="mt-4 max-w-xl leading-7 text-brand-muted">
+          Traditional Turkish barber services delivered directly to your home,
+          workplace or event.
+        </p>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h2 class="font-display text-xl font-bold text-brand-text">
+          Contact
+        </h2>
+
+        <div class="mt-4 space-y-3 text-brand-muted">
+          <a
+            href={phoneLink}
+            class="block transition hover:text-brand-gold"
+          >
+            {phoneDisplay}
+          </a>
+
+          <a
+            href={`mailto:${email}`}
+            class="block break-all transition hover:text-brand-gold"
+          >
+            {email}
+          </a>
+        </div>
+      </div>
+
+      <!-- Social -->
+      <div>
+        <h2 class="font-display text-xl font-bold text-brand-text">
+          Social Media
+        </h2>
+
+        <div class="mt-4 space-y-3 text-brand-muted">
+          <a
+            href={instagramLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block transition hover:text-brand-gold"
+          >
+            Instagram
+          </a>
+
+          <a
+            href={facebookLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="block transition hover:text-brand-gold"
+          >
+            Facebook
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="mt-10 flex flex-col gap-4 border-t border-white/10 pt-8 text-sm text-brand-muted sm:flex-row sm:items-center sm:justify-between"
+    >
+      <p>
+        ©  Yildiz Mobile Barber. All rights reserved.
+      </p>
+
+      <p>
+        Mobile barber service · Home · Work · Events
+      </p>
+    </div>
+  </div>
+</footer>
